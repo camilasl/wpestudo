@@ -1,0 +1,413 @@
+body{
+    background-color: #dadada;
+}
+
+.center {
+    justify-content: center;
+}
+/* ############################# ESTILO MENU - HEADER.PHP ######################### */
+.menu-login{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #d21e1e;
+    padding: 5px 20px 5px 20px;
+}
+
+.menu-login span{
+    color: #FFFFFF;
+}
+
+.menu-login a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-end;
+}
+
+.menu-login a img{
+    width: 25%;
+}
+
+.menu-principal{
+    background-color: #ffffff;
+}
+
+.bg-light{
+    background-color: #FFFFFF !important;
+}
+
+.logo-menu{
+    max-width: 40%;
+}
+
+#menu-main-menu {
+    display: flex;
+}
+
+#menu-main-menu li {
+    margin-right: 20px;
+    display: flex;
+}
+
+#menu-main-menu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    transition: all 0.3s ease-in-out;
+}
+
+#menu-main-menu li a:before{
+    content: '';
+    background: #d21e1e;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+#menu-main-menu li a:hover {
+    background-position: 0;
+}
+
+#menu-main-menu li a:hover::before{
+    width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    #menu-main-menu {
+        display: block;
+    }
+}
+
+
+/* ############################# ESTILO RODAPÉ - FOOTER.PHP ######################### */
+
+footer{
+    background-color: #000000;
+    padding: 25px 0px 25px 0px;
+}
+
+footer .logo-rodape{
+    width: 100%;
+    height: fit-content;
+    margin: 10px;
+}
+
+footer .menu-rodape {
+    display: flex;
+    justify-content: center;
+}
+
+footer .menu-rodape ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+footer .menu-rodape ul li{
+    margin: 25px 0px 25px 0px;
+}
+
+footer .menu-rodape ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+footer .menu-rodape ul li a img {
+    width: 7%;
+}
+
+
+@media screen and (max-width: 768px) {
+    footer .logo-rodape {
+        width: 50%;
+    }
+    footer .menu-rodape ul li a img {
+        width: 5%;
+    }
+
+    footer .menu-rodape {
+        justify-content: normal;
+    }
+}
+
+/** :::::::::::::::::::::: CADASTRO.PHP ::::::::::::::::::::::: */
+
+.cadastro .area-cadastro {
+    margin: 30px 0px 30px 0px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px 2px #9b9a9a;
+    width: 100%;
+    min-height: 200px;
+    padding: 25px;
+}
+
+.cadastro .area-cadastro a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cadastro .area-cadastro a img{
+    width: 20%;
+}
+
+.cadastro .area-cadastro h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+    margin: 15px 0px 15px 0px;
+    color: #616161;
+}
+
+.cadastro .area-cadastro form {
+    display: flex;
+    flex-flow: column;
+}
+
+.cadastro .area-cadastro form label {
+    color: #212529;
+    font-weight: bold;
+}
+
+.cadastro .area-cadastro form input {
+    border-radius: 0.6em;
+    padding: 5px 5px 5px 15px;
+    border: 1px solid #777777;
+}
+
+.cadastro .area-cadastro form #btn-enviar {
+    background: #f41819;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 25px;
+    padding: 12px;
+}
+
+.cadastro .area-cadastro form #btn-enviar:hover{
+    background: #8d0d0d;
+}
+
+.cadastro .area-cadastro .link-conta{
+    margin: 15px 0px 10px 0px;
+}
+
+.cadastro .area-cadastro .link-conta p {
+    display: flex;
+    justify-content: center;
+}
+
+/** :::::::::::::::::::::::::::::: MEMBROS.PHP :::::::::::::::::::::::::::::: */
+
+.membros .membro-pagina-inicial {
+    display: flex;
+    margin: 20px 0px 20px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.membros .membro-pagina-inicial .imagem-perfil {
+    text-align: center;
+    max-width: 25%;
+    /*border: 1px solid blue;*/
+    padding: 20px;
+}
+
+.membros .membro-pagina-inicial .imagem-perfil img {
+    width: 100%;
+}
+
+.membros .membro-pagina-inicial .membros-cabecalho {
+    display: flex;
+    align-items: center;
+    margin: 15px 0px 15px 0px;
+    flex-direction: column;
+    /*border: 2px solid green;*/
+}
+
+.membros .membro-pagina-inicial .membros-cabecalho h1 {
+    text-transform: uppercase;
+    color: #696969;
+}
+
+.membros .membro-pagina-inicial .membros-cabecalho h1 span {
+    text-decoration: underline;
+    text-transform: none;
+    font-style: italic;
+}
+
+.membros .membro-pagina-inicial .membros-cabecalho p {
+    margin: 0;
+}
+
+.membros .membros-planos {
+    margin: 25px 0px 25px 0px;
+}
+
+.membros .membros-planos h2 {
+    color: #696969;
+}
+
+.membros .membros-planos .planos {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 1px 1px 5px 2px #898989;
+    display: flex;
+    flex-direction: row;
+    margin: 25px 10px 10px 10px;
+}
+
+.membros .membros-planos .planos .plano-col{
+    width: 33.33%;
+    flex-direction: column;
+    display: flex;
+}
+
+.membros .membros-planos .planos .plano-col h3 {
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    .membros .membro-pagina-inicial {
+        flex-direction: column;
+    }
+    .membros .membro-pagina-inicial .imagem-perfil {
+        max-width: 50%;
+    }
+
+    .membros .membros-planos .planos {
+        flex-direction: column;
+    }
+
+    .membros .membros-planos .planos .plano-col {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+}
+
+/** :::::::::::::::::::::::::::::: INFORMACOES-PESSOAIS.PHP :::::::::::::::::::::::::::::: */
+
+.info-pessoal {
+    margin: 25px 0px 25px 0px;
+}
+
+.info-pessoal h1{
+    color: #484848;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.info-pessoal .caixa-informacao {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 25px;
+    box-shadow: 1px 0px 10px 1px #a7a7a7;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.info-pessoal .caixa-informacao .label {
+    font-size: 1.125em;
+}
+
+.info-pessoal .caixa-informacao .field{
+    color: #717171;
+}
+
+.info-pessoal .caixa-informacao hr {
+    border-bottom: 1px solid rgb(235, 235, 235) !important;
+}
+
+.info-pessoal .caixa-informacao h2 {
+    color: #737070;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.info-pessoal .caixa-informacao .area-endereco {
+    border: 1px solid #c5c4c4;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.info-pessoal .caixa-informacao .area-endereco .campo-endereco {
+    display: flex;
+    flex-direction: column;
+    width: 100%
+}
+
+.info-pessoal .caixa-informacao .area-documento {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.info-pessoal .caixa-informacao .area-documento .img-documento {
+    width: 50%;
+}
+
+.info-pessoal .caixa-informacao .area-documento .img-documento img {
+    width: 100%;
+}
+
+.btn-atualiza{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.btn-atualiza a {
+    border: 1px solid #d21e1e;
+    background-color: #d21e1e;
+    border-radius: 5px;
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    box-shadow: 1px 0px 10px 1px #a7a7a7;
+}
+
+.btn-atualiza a:hover {
+    background-color: #891313;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 992px) {
+    .info-pessoal .caixa-informacao .area-endereco {
+        flex-direction: column;
+    }
+
+    .info-pessoal .caixa-informacao .area-endereco .campo-endereco {
+        margin-bottom: 20px;
+    }
+
+    .info-pessoal .caixa-informacao .area-documento {
+        flex-direction: column;
+    }
+
+    .info-pessoal .caixa-informacao .area-documento .img-documento {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
